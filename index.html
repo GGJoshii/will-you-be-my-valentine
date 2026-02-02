@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    <style type="text/css" id="OperaUserStyle"></style>
+  </head>
+  <body>
+    <div id="valentineQuestion"><b>Will You Be My Valentine?</b></div>
+    <img src="valentinesnyangif-ezgif.com-rotate horizontal.gif" alt="valentine nyan cat gif" class="left-image">
+    <img src="valentinesnyangif-ezgif.com-rotate horizontal.gif" alt="valentine nyan cat gif" class="right-image">
+    <button class="yesButton" onclick="location.href='///C:/Users/geeti/OneDrive/Documents/FEEL%20MY%20RIZZ/index.html'">
+      YES ♡ 
+    </button>
+    <button class="noButton" id="noButton">Sorry, but no.</button>
+    <br />
+  
+    <div class="square-video-container">
+  <video controls autoplay loop>
+    <source src="clideo_editor_2d7970d5460a496395d63faf8b040acd (online-video-cutter.com).mp4" type="video/mp4">
+    <source src="clideo_editor_2d7970d5460a496395d63faf8b040acd.ogg" type="video/ogg"> 
+  </video>
+  </div>
+    <img src="arrrow.png" alt="valentine arrow png" class="behind-image">
+    <img src="just font zig zag arrow.png" alt="just arrow line" class="behind-image2">
+  </body>
+
+   <div class="text">
+    volume up!
+  </div>
+
+  <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="///C:/Users/geeti/OneDrive/Documents/FEEL%20MY%20RIZZ/index.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 11 + "px"; // Increase font size by 5px
+        });
+
+const noButton = document.getElementById('noButton');
+const question = document.getElementById('valentineQuestion');
+let clicks = 0;
+const clickLimit = 34;
+
+noButton.addEventListener('click', () => {
+  clicks++;
+  if (clicks === 1) {
+    noButton.innerText = "I said no.";
+  } else if (clicks === 2) {
+    noButton.innerText = "uhhhhh.. (っ ͡ ͡º - ͡ ͡º ς)"; 
+  }
+   if (clicks === 3) {
+    noButton.innerText = "Are you serious right meow? 🙀";
+  } else if (clicks === 4) {
+    noButton.innerText = "NO!";
+  }
+   if (clicks === 5) {
+    noButton.innerText = "NUH UH!!";
+  } else if (clicks === 6) {
+    noButton.innerText = "NEVER!!!";
+  }
+   if (clicks === 7) {
+    noButton.innerText = "WIENER BALL BLAST ˗ˏˋ ✸ Ɑ͞ ̶͞ ̶͞ ̶͞ لں͞";
+  } else if (clicks === 8) {
+    noButton.innerText = "YOU'RE STINKY";
+  }
+   if (clicks === 20) {
+    noButton.innerText = "FUH YOU!!!! 😼";
+  } else if (clicks === 32) {
+    noButton.innerText = "Okay..fine ≖⩊≖";
+  }
+   if (clicks === 33) {
+    noButton.style.display = 'none';
+  }
+  
+});
+    </script>
+
+</html>
